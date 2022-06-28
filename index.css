@@ -114,10 +114,9 @@ a{
 @media only screen and (max-width: 740px) {
    
     *{
-    flex-direction: column;
-    margin-bottom: 0.5em;
- 
-   }
+        flex-direction: column;
+        margin-bottom: 0.1em;
+    }
    form{
     display: flex;
     flex-direction: column;
@@ -125,5 +124,16 @@ a{
     left: 0;
     transform: none;
    }
+
+   .center-name input {
+    width: 100%;
+   }
+   .register{
+     align-items: center;
+    }
+    .signin{
+     align-items: center;
+    }
+
    
 }
