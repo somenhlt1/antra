@@ -437,3 +437,21 @@ function exampleFunction() {
 }
 
 console.log("Test 29 ",getFuncName(exampleFunction));
+
+
+//Reducer
+
+Array.prototype.myReduce = function (cb,initalValue = 0) { 
+  let currentValue = initalValue;
+  for (let x = 0; x < this.length; x++) { 
+    cb(currentValue += this[x],this[x],x);
+  }
+  return currentValue;
+}
+
+const array1 = [1, 2, 3,3];
+
+console.log(array1.myReduce((acc, cur) => {
+  return acc + cur
+}, 2));
+
